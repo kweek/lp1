@@ -1,0 +1,102 @@
+<div class="createProfile-container">
+		<h3>Which area would you be a great mentor in?</h3>	  
+	<div class="mentor-area">
+		<select ng-model="mentor.orderProp">
+			<option value="academic" ng-click="checked(choice)"> Academic</option>
+			<option value="tech">Tech</option>
+			<option value="sports">Sports</option>
+			<option value="music">Music</option>
+		</select>	
+	</div>
+	<hr/>
+	<div class="choice-container">
+		<div class="row1">	
+			<h4>Academic Mentors</h4>	
+			<div class="academic-interest">
+				     <div class="col-lg-6">
+					    <div class="input-group" ng-repeat="item in academic">
+							<input type="checkbox" ng-click="checked(item)"> {{item.name}}<br/> 
+ 						</div>
+ 
+ <p></p>
+					</div>	
+			</div>
+		</div>
+		<div class="row2">		  
+			<h4>Sports Mentors</h4>	
+			<div class="academic-interest">
+				     <div class="col-lg-6">
+					    <div class="input-group" ng-repeat="sport in sports">
+					    	<input type="checkbox" ng-click="checked(sport)"> {{sport.name}}<br/>
+						</div>
+					</div>	
+			</div>	
+		</div>
+		<div class="row3">	  
+			<h4>Tech Mentors</h4>	
+			<div class="academic-interest">
+				     <div class="col-lg-6">
+					    <div class="input-group" ng-repeat="code in tech">
+							<input type="checkbox" ng-click="checked(code)"> {{code.name}}<br/>
+						</div>
+					</div>	
+			</div>	
+		</div>	
+		<div class="row4">	  
+			<h4>Music Mentors</h4>	
+			<div class="academic-interest">
+				     <div class="col-lg-6">
+					    <div class="input-group" ng-repeat="instrument in music">
+							<input type="checkbox" ng-click="music(instrument)"> {{instrument.name}}<br/> 	
+							<!-- <input type="checkbox" ng-model="Music"> Guitar<br/> 
+							<input type="checkbox" ng-model="Music"> Violin<br/> 
+							<input type="checkbox" ng-model="Music"> Flute<br/> 
+							<input type="checkbox" ng-model="Music"> Drums<br/> -->  
+						</div>
+					</div>	
+			</div>
+		</div>
+	</div>	
+	<hr/>
+	<div class="location-container">
+		<div class="heading-phrase">
+			<h3>Where do you live?</h3>
+			<p>This will allow your profile to show up when being searched.</p>
+		</div>
+		<div class="location-input">
+			<input class="form-control-address-box" type="text" ng-model="mentor.address.street" placeholder="Street Address">
+			<input class="form-control-apt-box"type="text" ng-model="mentor.address.apt" placeholder="Suite/Apt"><br/>
+			<input class="form-control-city-box"type="text" ng-model="mentor.address.city" placeholder="City">
+			<input class="form-control-state-box"type="text" ng-model="mentor.address.state" placeholder="State">
+			<input class="form-control-zipcode-box"type="text" ng-model="mentor.address.zip"pattern="[0-9]*" maxlength="5" required name="zip" id="zip" placeholder="Zip Code">
+		</div>
+	</div>	
+	<div class="travelDistance">
+		<div class="travel">
+		<h4>How far are you willing to travel?</h4>
+			<select ng-model="mentor.distance">
+				<option value="5 miles">5 miles</option>
+				<option value="10 miles">10 miles</option>
+				<option value="20 miles">20 miles</option>
+				<option value="30 miles">30 miles</option>
+			</select>
+		</div>
+	</div>
+	<div class="experience-container">
+		<form role="form">
+		  <div class="form-group">
+		    <h4>What Experience do you have?</h4>
+		    <textarea class="form-control-experience" rows="3" ng-model="mentor.experience"></textarea>
+		  </div>
+		</form>
+	</div>
+	<hr/>
+	<div class="createProfile-footer">
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+        <button class="btn primary-btn" value="Submit" ng-click="submit()">Submit</button>
+    </div> 
+    <!-- <button ng-click="submit()">Submit</button> -->
+    <hr/> 
+
+</div>
+

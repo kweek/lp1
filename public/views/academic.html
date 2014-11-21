@@ -1,0 +1,72 @@
+<div class="container-academic">
+<h2>Find a Mentor</h2>
+	<div class="top-row">
+		<div class="left-dropdown">
+			<div class="dropdown">
+			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+			    Academic Areas
+			    <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Math</a></li>
+			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Science</a></li>
+			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">English</a></li>
+			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">GMAT</a></li>
+			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Language</a></li>
+			  </ul>
+			</div>
+		</div>			
+		<div class="right-dropdown">
+			<div class="dropdown">
+			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+			    All Mentor  
+			    <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Available Now</a></li>
+			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Best Rating</a></li>
+			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Price</a></li>
+			  </ul>
+			</div>
+		</div>	
+	</div>
+	
+	<hr/>	
+	<!-- google map -->
+	<div class="left-sidebar">
+		<div class="map-container">
+		    <google-map center="map.center" zoom="map.zoom" control="map.control" options="options" bounds="map.bounds">
+		       <rectangle models="bounds" cords="'box'" fill="'#FFFFFF .5'"></rectangle>
+		    </google-map>
+		</div> 
+	</div>	
+	<!-- Mentor Stream  -->
+	<div class="right-sidebar">
+		<div class="mentor-stream">
+			
+			<div class="row">
+				  <div class="col-sm-9 col-sm-6 col-md-4">
+				    <ul class="mentors">
+				       <li ng-repeat="mentor in mentors | filter:query | orderBy: orderProp" class="thumbnail mentor-listing">
+				         <a href="#/mentorPic/{{mentor.id}}" class="thumb"><img ng-src="{{mentor.imageUrl}}"></a>
+				         <a href="#/mentorPic/{{mentor.name}}"></a>
+				         <p>{{mentor.subject}}</p>
+				       </li>  
+				    </ul>   
+
+				    <!-- <div class="thumbnail">
+				      <img src="http://placehold.it/140x140" alt="...">
+				      <div class="caption">
+				        <h3>Thumbnail label</h3>
+				        <p>...</p>
+				        <p><a href="#" class="btn btn-warning" role="button">Button</a></p>
+				      </div>
+				    </div> -->
+				  </div>
+			</div>  
+		</div>		
+	</div>
+
+
+
+</div>

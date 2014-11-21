@@ -1,0 +1,36 @@
+
+<html>
+		
+
+
+	<body>
+	<!-- <div id="slides_control" class="carousel slide"> -->
+	  <div class="containerSize">
+		<div style="height: 305px">
+		    <carousel interval="myInterval">
+		      <slide ng-repeat="slide in slides" active="slide.active">
+		        <img ng-src="{{slide.image}}" style="margin:auto;">
+		        <div class="carousel-caption">
+		          <h4>{{slide.text}}</h4> 
+		        </div>
+		      </slide>
+		    </carousel>
+		  </div>
+	  </div>	  
+	</div>  
+
+			
+			</div>
+		</div>	
+			<div class="input-box">
+				<input class="form-control-text-box" type="text" placeholder="Search" ng-model="search">
+				<input class="form-control-zip-box" type="text" placeholder="Zipcode" ng-model="search">
+				<input class="btn btn-default" type="submit" placeholder="Submit" ng-click="searchMentors()">
+			</div>
+
+
+		
+	</body>
+</html>
+
+

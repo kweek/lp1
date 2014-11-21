@@ -1,0 +1,28 @@
+<!-- <div type="text/ng-template" id="mentorSignup.html"> -->
+
+<div class="mentor-signup-form">
+  <div class="modal-header">
+      <h3>Register to be a Mentor</h3>
+  </div>
+  <form ng-submit="submit()">
+     <div class="mentorSignup-body">
+        <label>First Name</label>
+        <input type="text" ng-model="signupMentor.firstName" />
+        <label>Last Name</label>
+        <input type="text" ng-model="signupMentor.lastName" />
+        <label>Email</label>
+        <input type="email" ng-model="signupMentor.email" />
+        <label>Phone Number</label>
+        <input type="tel" ng-model="signupMentor.phone" />
+        <label>Password</label>
+        <input type="password" ng-model="signupMentor.password" />
+     </div>
+    <div class="mentorSignup-footer">
+     <!--  <button class="btn primary-btn" ng-click="toggle()">Next</button>
+      <div class="show-form" ng-show="toggle"></div>
+      <div class="hide-form" ng-hide="toggle"></div> -->
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+        <input type="submit" class="btn primary-btn" value="Submit" />
+    </div>      
+  </form> 
+ </div>  

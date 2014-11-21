@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html ng-app="localPair1">
+	<head>
+		<title>localPair</title>
+		<link rel="stylesheet" type="text/css" href="styles/styles.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'> -->
+		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+
+		<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"> -->
+
+
+	</head>
+
+
+
+<body>
+
+
+		<div class="bar">
+		  <div class="left-bar">
+		 	<ul>
+				<li><a href="/"> Logo </a></li> 
+			  	<li><a href="#/academic"> Academic </a></li>
+			    <li><a href="#/sports"> Sports </a></li> 
+			    <li><a href="#/tech"> Tech </a></li> 
+			    <li><a href="#/music"> Music </a></li>
+			</ul>
+		  </div>
+		 <div class="right-bar" ng-controller="loginController">	
+			<ul>          
+	            <li><a href="#" ng-click="openSignup()"> Sign Up </a></li>
+		        <li><a href="#" ng-click="openLogin()"> Login </a></li>
+		        <li><a href="#/help"> Help </a></li> 
+		        <li><a href="#/mentorSignup"><button class="btn btn-info" type="submit">Be a Mentor</button></a></li>
+		    </ul> 
+		 </div>  
+		</div>
+
+<ng-view></ng-view>
+
+	
+
+
+
+
+		<!-- AngularJS -->
+		<script src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js'></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
+		<!-- jquerry bootstrap cdn -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		
+		<!-- angularjs map -->
+		<script src='http://maps.googleapis.com/maps/api/js?sensor=false'></script>
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js'></script>
+		<script src='js/angular-google-maps.min.js'></script>
+		
+		<!-- <script src='js/angular-google-maps.min.js'></script> -->
+		 
+		<!-- login modal popup -->
+		
+    	<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.2.min.js"></script>
+
+
+
+		<script src="js/app.js"></script>
+		<script src="controllers/homeController.js"></script>
+		<script src="services/homeService.js"></script>
+		<script src="controllers/academicController.js"></script>
+		<script src="controllers/musicController.js"></script>
+		<script src="controllers/sportsController.js"></script>
+		<script src="controllers/techController.js"></script>
+		<script src="controllers/helpController.js"></script>
+		<script src="login/loginController.js"></script>
+		<script src="login/authService.js"></script>
+		<script src="mentorSignup/mentorSignupController.js"></script>
+		<script src="mentorSignup/mentorAuthService.js"></script>
+		<script src="controllers/createProfileController.js"></script>
+	</body>
+</html>

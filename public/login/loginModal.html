@@ -1,0 +1,21 @@
+<div>
+  <div class="modal-header">
+      <h3>Login</h3>
+      <b ng-if="error" class="error-message">{{error}}</b>
+  </div>
+  <form ng-submit="submit()">
+    <div class="modal-body">
+      <label>Email</label>
+      <input type="email" ng-model="user.email" />
+      <label>Password</label>
+      <input type="password" ng-model="user.password" />
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+        <input type="submit" class="btn primary-btn" value="Submit" />
+    </div>
+  </form>
+</div>
+
+ 
+

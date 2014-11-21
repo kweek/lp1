@@ -1,0 +1,247 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*  HomePage Navebar */
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+.bar {
+  height: 5em;
+  padding-top: 2em;
+  /*background: gray;*/
+  background: transparent; 
+  color: black; 
+  margin: 2em;
+}
+
+.bar a {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	color: black;
+}
+
+.left-bar {
+	float: left;
+
+
+}
+.left-bar ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.right-bar {
+	float: right;
+}
+
+.right-bar ul li {
+ 	display: inline-block;
+ 	margin-right: 20px;
+}
+
+/*Home page background*/
+
+.main-container {
+	min-height: 100%;
+	height: auto;
+	width: 100%;
+	background: url() fixed center center;
+	background-size: cover;
+}
+
+
+/* signup/login modal */
+
+.error-message {
+	color: red;
+}
+
+.modal-header {
+	width: 410px;
+	margin-left: 10px;
+}
+
+/* Mentor Signup Page...become a mentor button */
+.mentor-signup-form {
+	width: 500px;
+}
+.mentorSignup-body {
+	width: 400px;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+.mentorSignup-body input {
+	width: 400px;
+}
+
+.mentorSignup-footer {
+	margin-left: 30px;
+}
+
+/* Academic View*/
+.container-academic {
+	margin: 0px;
+}
+
+h2 {
+	text-align: center;
+}
+
+
+.left-dropdown {
+	float: left;
+	margin-left: 40px;
+}
+.right-dropdown {
+	float: right;
+	margin-right: 40px;
+}
+
+.left-sidebar {
+	margin-left: 10px;
+}
+
+.angular-google-map-container { 
+	margin-top: 20px;
+	height: 700px;
+	width: 45%;
+	float: left;
+}
+.panel {
+	width: 300px;
+}
+
+
+/*create profile page*/
+.createProfile-container {
+	margin: 50px;
+}
+
+hr {
+	width: 100%;
+}
+
+.row1 {
+	width: 250px;
+	float: left;
+
+}
+.row2 {
+	width: 250px;
+	float: left;
+	margin-left: 20px;
+}
+.row3 {
+	width: 250px;
+	float: left;
+	margin-left: 20px;
+}
+.row4 {
+	width: 250px;
+	float: left;
+	margin-left: 20px;
+}
+.choice-container {
+	margin-bottom: 20px;
+}
+.form-control-address-box {
+	width: 400px;
+}
+.form-control-apt-box{
+	width: 90px;
+}
+.form-control-city-box {
+	width: 300px;
+}
+.form-control-state-box {
+	width: 70px;
+}
+.form-control-zipcode-box {
+	width: 100px;
+}
+.form-control-experience {
+	width: 400px;
+}
+
+/*home html page carousel*/
+/*#slides_control > div{
+  height: 600px;
+ } */
+.containerSize {
+	width: 1200px;
+	height: 600px;
+}  
+
+}
+.container img {
+	width: 100%;
+	height: auto;
+}
+
+/*img{
+  margin:auto;
+  width: 90%;
+}
+#slides_control {
+  position:absolute; 
+  background-position: 
+  width: 1200px;
+  left: 20%;
+  top:20%;
+  margin-bottom: 30px;
+  margin-left:-200px;
+}*/
+
+
+
